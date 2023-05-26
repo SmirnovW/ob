@@ -11,6 +11,6 @@ export const createRepositoriesStore: StateCreator<
 > = (set): RepositoriesStore => ({
 	repositories: [],
 	setRepositories: (repositories) => set(() => ({ repositories })),
-	requestStatus: RequestStatus,
+	requestStatus: RequestStatus.INITIAL,
 	setRequestStatus: (requestStatus) => set(() => ({ requestStatus })),
 });
